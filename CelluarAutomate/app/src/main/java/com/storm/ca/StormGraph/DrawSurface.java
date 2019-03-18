@@ -148,7 +148,7 @@ public abstract class DrawSurface extends SurfaceView implements Callback, Runna
 	{  
 
 		//这个很重要，清屏操作，清楚掉上次绘制的残留图像  
-		c.drawColor(Color.BLACK);  
+		c.drawColor(Color.GRAY);  
 
 		c.translate(0, 0);  
 		paint.setTextSize(40);
@@ -162,7 +162,7 @@ public abstract class DrawSurface extends SurfaceView implements Callback, Runna
 		{
 			obj.draw(c, paint);
 		}
-		paint.setColor(Color.RED);
+		paint.setColor(Color.YELLOW);
 		c.drawText("FPS:" + FPS + "; 屏幕宽度" + Gconst.scaleSceern * Gconst.meterInWeight, 80, 70, paint);
 		
 	}  

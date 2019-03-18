@@ -4,7 +4,7 @@ import android.graphics.*;
 public class Cell implements Graphic
 {
 	int isAlive;
-	int state[] = new int[]{Color.BLACK, 0xff3399CC};
+    int state[] = new int[]{Color.GRAY, Color.YELLOW};
 	float L = Gconst.scaleSceern;
 	int x, y;
 	public Cell(int x, int y)
